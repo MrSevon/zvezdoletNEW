@@ -1,0 +1,60 @@
+body {
+  background-color: #1d242f;
+
+}
+
+.game-container {
+  width: 400px;
+  height: 600px;
+  border: 2px solid green;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.spaceship {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/spaceship.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 20px;
+  transition: left 0.1s linear; 
+}
+
+.meteor {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/meteor.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+}
+
+.start-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
